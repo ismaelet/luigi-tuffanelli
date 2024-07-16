@@ -74,7 +74,7 @@ $curriculum = [
 			],
 			[
 				'Ideatore, formatore e/o supervisore di diverse ricerche e sperimentazioni',
-				"dal 2007 ad oggi (2022)."
+				"dal 2007 ad oggi (2024)."
 			],
 		]
 	],
@@ -185,6 +185,7 @@ $publications = [
 			<strong>&middot; 2016</strong>: Leadership efficaci, in “Nuovo Gulliver News” n°175.<br>
 			<strong>&middot; 2019</strong>: La gestione della classe, in Insegnare domani, Sostegno, Scuola dell’infanzia e primaria, a cura di Ianes D. e Cramerotti S., Edizioni Erickson, Trento.<br>
 			<strong>&middot; 2019</strong>: Gestire la classe e i gruppi, in Il manuale dell’expert teacher, a cura di Ianes D. e Cramerotti S., Biancato L. e Demo H., Edizioni Erickson, Trento.
+			<strong>&middot; 2024</strong>:La gestione efficace della classe. Autocontrollo, comunicazione, progettualità e soft skills, Edizioni Erickson, Trento
 		"
 	],
 	[
