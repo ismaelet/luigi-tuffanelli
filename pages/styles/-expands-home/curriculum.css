@@ -1,0 +1,132 @@
+/*
+* Layout
+*/
+.curriculum {
+	--_section-bgr: var(--bgr);
+}
+
+.curriculum-areas {
+	grid-auto-flow: dense;
+	gap: 6rem;
+}
+
+.curriculum-area:first-child {
+	grid-row: span 2;
+}
+
+.curriculum-wrapper {
+	--_page: 1;
+	position: relative;
+	overflow-y: hidden;
+	max-height: calc(var(--_page) * 35rem);
+	padding-left: 3px;
+	transition: max-height .4s;
+}
+
+.curriculum-wrapper .read-more {
+	z-index: 1;
+	bottom: 0;
+}
+
+.curriculum-wrapper.ended .read-more {
+	display: none;
+}
+
+.curriculum-wrapper:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 14rem;
+	background: linear-gradient(to top, var(--_section-bgr) 3rem, rgba(252, 252, 252, 0));
+	transition: opacity .2s;
+}
+
+.curriculum-wrapper.ended:after {
+	opacity: 0;
+}
+
+.curriculum-experience {
+	position: relative;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	border-left: 2px solid var(--text-color-fade);
+}
+
+.curriculum-experience:last-child {
+	padding-bottom: 0;
+}
+
+.curriculum-experience:before {
+	--_size: 9px;
+	--_border: 9px;
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: calc(var(--_size) / -2 - var(--_border));
+	display: block;
+	width: var(--_size);
+	aspect-ratio: 1;
+	background-color: var(--text-color-fade);
+	border: var(--_border) solid var(--_section-bgr);
+	border-radius: 50%;
+}
+
+.curriculum-experience h3 {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+.curriculum-experience p {
+	line-height: 2;
+	font-size: .95rem;
+}
+
+.curriculum-line {
+	border-top: 2px solid var(--border-color);
+	grid-column: span 2;
+}
+
+/*
+* Publications
+*/
+.publications {
+	--_section-bgr: #f3f3f3;
+	background-color: var(--_section-bgr);
+}
+
+.publications .curriculum-experiences {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.publications strong {
+	font-family: Open Sans;
+}
+
+/*
+* Responsive
+*/
+@media (max-width: 768px) {
+
+	.curriculum-areas {
+		grid-template-columns: 1fr;
+	}
+
+	.curriculum-area:first-child {
+		grid-row: initial;
+	}
+
+	.curriculum-line {
+		display: none;
+	}
+
+	.publications .curriculum-experiences {
+		grid-template-columns: 1fr;
+	}
+
+}

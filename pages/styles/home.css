@@ -1,0 +1,42 @@
+/*
+* Layout
+*/
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+* Typography
+*/
+.section-title {
+	margin-bottom: 2rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.read-more {
+	width: max-content;
+	margin-top: 1rem;
+	cursor: pointer;
+	transition: opacity .2s;
+}
+
+.read-more:after {
+	content: 'continua a leggere';
+	border-bottom: 1px dashed;
+	color: var(--text-color-fade);
+}
+
+.read-more:hover:after {
+	color: var(--theme-min);
+}
+
+/*
+* Responsive
+*/
+@media (max-width: 1680px) {
+	.main-wrap {
+		--wrap-width: 1200px;
+	}
+}

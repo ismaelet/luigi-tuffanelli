@@ -1,0 +1,45 @@
+/* Structure */
+main {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	padding: 5rem 2rem;
+	place-items: center;
+}
+
+/* Form */
+#form-template {
+	background-color: var(--c300);
+	box-shadow: 0 5px 2rem rgba(0,0,0,.5);
+	width: 600px;
+	max-width: 100%;
+	padding-inline: 2rem;
+	position: relative;
+}
+
+/* Background */
+#form-background {
+	background-color: var(--c100);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+	#form-background {
+		background-color: var(--bgr-color);
+	}
+	
+	.form-template {
+		background-color: transparent;
+		box-shadow: none;
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	main {
+		padding-top: 2rem;
+	}
+
+}

@@ -1,0 +1,95 @@
+/*
+* Layout
+*/
+.bio {
+	padding-top: 6rem;
+	padding-bottom: 4rem;
+	margin-bottom: 5rem;
+	border-bottom: 2px solid var(--border-color);
+}
+
+.bio-body {
+	display: grid;
+	grid-template-columns: auto 30rem;
+	gap: 3rem 10rem;
+}
+
+/*
+* Typography
+*/
+.bio-text {
+	--_line-height: 2.3em;
+	--_max-lines: 11;
+	--_page: 1;
+	position: relative;
+	overflow: hidden;
+	max-height: calc(var(--_line-height) * var(--_max-lines) * var(--_page));
+	margin-top: calc(-1/2 * (var(--_line-height) - 1em));
+	line-height: var(--_line-height);
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	text-align: justify;
+	transition: max-height .4s;
+}
+
+.bio-text:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 7rem;
+	background: linear-gradient(to top, rgba(252, 252, 252, .8), rgba(252, 252, 252, 0));
+	pointer-events: none;
+	transition: opacity .2s;
+}
+
+.bio-text.ended:after {
+	opacity: 0;
+}
+
+/*
+* Contacts
+*/
+.bio-contacts {
+	margin-top: 2rem;
+	display: grid;
+}
+
+.bio-contact {
+	display: grid;
+	grid-template-columns: 1.5rem minmax(0, 1fr);
+	gap: 2rem;
+	width: 15rem;
+}
+
+.bio-icon {
+	aspect-ratio: 1;
+}
+
+.bio-icon svg {
+	fill: var(--text-color-fade);
+}
+
+.bio-contact:hover svg {
+	fill: var(--primary);
+}
+
+.bio-link {
+	text-align: right;
+}
+
+/*
+* Responsive
+*/
+@media (max-width: 1024px) {
+
+	.bio-body {
+		grid-template-columns: 1fr;
+	}
+
+	.bio-contacts {
+		justify-content: right;
+	}
+
+}

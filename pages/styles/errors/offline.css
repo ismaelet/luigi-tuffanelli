@@ -1,0 +1,36 @@
+/* Structure */
+main {
+	height: 100vh;
+	min-height: 30rem;
+	position: relative;
+}
+
+#body {
+	background-color: #fff;
+}
+
+/* Content */
+#logo {
+	--box-height: 10rem;
+	height: var(--box-height);
+	margin-top: calc(var(--box-height) / -2);
+}
+
+#body h1 {
+	font-size: min(6rem, 13vw);
+}
+
+/* Login */
+#login {
+	bottom: 1rem;
+}
+
+#login button {
+	background: none;
+	border: none;
+}
+
+#login .text {
+	border-bottom-style: dashed;
+	transition: color .3s;
+}

@@ -1,0 +1,102 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+/* Root */
+:root {
+
+	/* Fonts */
+	--font-main: 'Jost', sans-serif;
+	--font-text: 'Raleway', sans-serif;
+
+	/* Wraps */
+	--wrap-width: 1200px;
+	--wrap-padding: 2rem;
+
+}
+
+/* Themes */
+html/*[data-theme='light']*/ {
+
+	/* theme color */
+	--theme-h: 0;
+	--theme-s: 0%;
+
+	--bgr-h: var(--theme-h);
+	--bgr-s: var(--theme-s);
+	--bgr-l: 100%;
+
+	--theme-max: #fff;
+	--theme-min: #000;
+
+	/* accent colors */
+	--primary: #000;
+	--primary-variant: #F36500;
+	--secondary: #0066AE;
+
+	/* text colors */
+	--text-color-fade: #909090;
+	--text-color: #606060;
+	--text-color-strong: #404040;
+
+	/* borders */
+	--border-color-fade: hsl(var(--theme-h), 0%, 85%);
+	--border-color: #ebebeb;
+	--border-color-strong: #dadada;
+
+	/* surfaces */
+	--bgr: #fcfcfc;
+	--surface: hsl(var(--theme-h), var(--theme-s), 97%);
+	--surface-bw: hsl(var(--theme-h), 0%, 97%);
+	--surface-secondary: hsl(var(--theme-h), var(--theme-s), 80%);
+	--surface-secondary-bw: hsl(var(--theme-h), 0%, 80%);
+	--surface-tertiary: var(--bgr);
+
+}
+
+/*html[data-theme='dark'] {
+
+	--theme-h: 210;
+	--theme-s: 7%;
+
+	--bgr-h: var(--theme-h);
+	--bgr-s: 13%;
+	--bgr-l: 10%;
+
+	--primary: #ff9600;
+	--primary-variant: #F36500;
+	--secondary: #EBB971;
+
+	--text-color-fade: hsl(var(--theme-h), var(--theme-s), 35%);
+	--text-color: hsl(var(--theme-h), var(--theme-s), 70%);
+	--text-color-strong: #f3f3f3;
+
+	--bgr: hsl(var(--bgr-h), var(--bgr-s), var(--bgr-l));
+	--surface: hsl(var(--theme-h), var(--theme-s), 16%);
+	--surface-secondary: hsl(var(--theme-h), var(--theme-s), 21%);
+	--surface-tertiary: hsl(var(--theme-h), var(--theme-s), 7%);
+
+}*/
+
+/* Colors */
+html {
+	--bgr: hsl(var(--bgr-h), var(--bgr-s), var(--bgr-l));
+	background-color: var(--bgr);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--text-color-strong);
+}
+
+body {
+	background-color: var(--bgr);
+	color: var(--text-color);
+}
+
+p strong {
+	color: var(--text-color-strong);
+}

@@ -1,0 +1,23 @@
+/* Structure */
+main {
+	background-color: #fff;
+}
+
+/* Form */
+#form {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#form .title {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+#options-bar {
+	justify-content: space-between;
+}
+
+#options-bar p {
+	transition: color .2s;
+}
