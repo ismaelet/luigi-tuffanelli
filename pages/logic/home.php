@@ -42,7 +42,7 @@ $curriculum = [
         'experiences' => [
             [
                 'Formatore docenti',
-                "L'esperienza come aggiornatore o formatore inizia nel 1987 e si è protratta con costanza fino ad oggi (2022). Ha collaborato con numerosi istituti scolastici delle Province Autonome di Trento e di Bolzano, della Lombardia e del Veneto, con l’IPRASE del Trentino, con il Dipartimento Istruzione della Provincia Autonoma di Trento, con l’Istituto Pedagogico di Bolzano, con il Centro Studi Erickson."
+                "L'esperienza come aggiornatore o formatore inizia nel 1987 e si è protratta con costanza fino ad oggi (2026). Ha collaborato con numerosi istituti scolastici delle Province Autonome di Trento e di Bolzano, della Lombardia e del Veneto, con l’IPRASE del Trentino, con il Dipartimento Istruzione della Provincia Autonoma di Trento, con l’Istituto Pedagogico di Bolzano, con il Centro Studi Erickson."
             ],
             [
                 'Supervisore al tirocinio',
